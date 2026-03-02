@@ -38,6 +38,16 @@ a {
     border-radius: 10px;
 }
 
+@keyframes spinDice {
+    0%   { transform: rotate(0deg) scale(1); }
+    50%  { transform: rotate(360deg) scale(1.1); }
+    100% { transform: rotate(720deg) scale(1); }
+  }
+
+.spin {
+    animation: spinDice 0.8s ease-out;
+}
+
 footer {
     margin-top: 7rem;
 }
